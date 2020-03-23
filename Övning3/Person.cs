@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Övning3
 {
-    class Person
+   public class Person
     {
         private int age;
         private string fName;
@@ -12,6 +12,14 @@ namespace Övning3
         private double height;
         private double weight;
 
+        public Person(int age, string fname, string lname, double height, double weight)
+        {
+            this.age = age;
+            fName = fname;
+            lName = lname;
+            this.height = height;
+            this.weight = weight;
+        }
         public int Age
         {
             get { return age; }
@@ -39,3 +47,4 @@ namespace Övning3
         }
     }
 }
+
